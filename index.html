@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+
+    <title>whiTetris</title>
+    
+
+    <script type="application/javascript">
+    
+      x = 5;
+      y = 5;
+
+      // matriz que contiene el estado de las teclas.
+      var key = {};
+
+    </script>
+    
+    <script type="text/javascript" src="js/keyboard.js"></script> 
+    <script type="text/javascript" src="js/graphics.js"></script> 
+    <script type="text/javascript" src="js/tetris.js"></script> 
+    <script type="text/javascript" src="js/blocks.js"></script> 
+
+
+    <style type="text/css">
+      body { background-color: black; }
+      
+      #wrapper {
+             background-image: url('img/bgmain.gif');
+             background-repeat: no-repeat;
+             background-position: center;
+             position: absolute;
+
+             width: 672px;
+             height: 480px;
+             margin-left: 50%;
+             left: -336px;
+          }
+      canvas { 
+               margin-left: 66px;
+               margin-top: 82px;
+              }
+    </style>
+  </head>
+
+
+  <body onload="init();">
+  <div id="wrapper">
+    <canvas id="tutorial" width="160" height="320"></canvas>
+  </div>
+  </body>
+
+
+</html>
